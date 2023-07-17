@@ -7,7 +7,7 @@ const initialState: Todos = ['Fazer café', 'Estudar Redux', 'Estudar Zustand'];
 
 const todoSlice = createSlice({
   name: 'todo',
-  initialState: ['Fazer café', 'Estudar Redux', 'Estudar Zustand'],
+  initialState,
   reducers: {
     add: (state, action: PayloadAction<{ newTodo: string }>) => {
       state.push(action.payload.newTodo);
