@@ -1,7 +1,7 @@
 import ReactPlayer from 'react-player'
+import { Loader } from 'lucide-react'
 import { useAppDispatch, useAppSelector } from '../store'
 import { next, useCurrentLesson } from '../store/slices/player'
-import { Loader } from 'lucide-react'
 
 export function Video() {
   const dispatch = useAppDispatch()
